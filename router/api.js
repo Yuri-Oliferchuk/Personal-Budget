@@ -1,9 +1,8 @@
 const express = require('express');
 const apiRouter = express.Router();
+const envRouter = require('./envelopes.js')
 
-//Standart routers
-apiRouter.get('/', (res, req, next) => {
-    req.send('Hello World');
-});
+apiRouter.use('/envelopes', envRouter);
+
 
 module.exports = apiRouter;
