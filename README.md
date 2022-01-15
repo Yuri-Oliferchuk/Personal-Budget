@@ -2,10 +2,12 @@
 
 **GET**
 http://localhost:3000/api/envelopes/ - get all envelopes.
+
 http://localhost:3000/api/envelopes/:id/ - get envelop by it`s ID.
 
 **POST**
 http://localhost:3000/api/envelopes/ - create new envelop. Request must have JSON data with new envelop information.
+
 http://localhost:3000/api/envelopes/transfer/:from/:to/ - copy quantity from envelope with id(:from) to envelope with id(:to). Request must have JSON data with quantity.
 
 **PUT**
